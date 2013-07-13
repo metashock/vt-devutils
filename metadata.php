@@ -15,10 +15,10 @@
 	 * Author:     Marat Bedoev <oxid@marat.ws>
 	 */
 
-	$sMetadataVersion = '1.1';
+	$sMetadataVersion = '1.0';
 	$aModule = array(
 		'id'          => 'vt-devutils',
-		'title'       => '<strong style="color:#c700bb;border: 1px solid #c700bb;padding: 0 2px;background:white;">VT</strong> Dev Utils',
+		'title'       => '<strong style="color:#c700bb;border: 1px solid #c700bb;padding: 0 2px;background:white;">VT</strong> Dev Utils for OXID 4.6',
 		'description' => 'some helpful functions for OXID developing',
 		'thumbnail'   => 'oxid-vt.jpg',
 		'version'     => '2.1 from 2013-16-07 / newest version: <img src="https://raw.github.com/vanilla-thunder/vt-devutils/module/version.jpg" style="float:right;"/><br/>
@@ -49,20 +49,20 @@
 			'vtdu_be'         => 'vt-devutils/files/vtdu_be.php', // backend files
 		),
 		'templates'   => array(
-			'navigation_vtdu.tpl' => 'vt-devutils/views/admin/navigation_vtdu.tpl',
+			'navigation_vtdu.tpl' => 'vt-devutils/out/admin/navigation_vtdu.tpl',
 
-			'vtdu_logs.tpl'       => 'vt-devutils/views/admin/vtdu_logs.tpl',
-			'vtdu_scratchpad.tpl' => 'vt-devutils/views/admin/vtdu_scratchpad.tpl',
+			'vtdu_logs.tpl'       => 'vt-devutils/out/admin/vtdu_logs.tpl',
+			'vtdu_scratchpad.tpl' => 'vt-devutils/out/admin/vtdu_scratchpad.tpl',
 
-			'vtdu_ajax.tpl'       => 'vt-devutils/views/vtdu_ajax.tpl',
-			'vtdu_fe.tpl'         => 'vt-devutils/views/vtdu_fe.tpl',
-			'vtdu_be.tpl'         => 'vt-devutils/views/admin/vtdu_be.tpl',
+			'vtdu_ajax.tpl'       => 'vt-devutils/out/vtdu_ajax.tpl',
+			'vtdu_fe.tpl'         => 'vt-devutils/out/vtdu_fe.tpl',
+			'vtdu_be.tpl'         => 'vt-devutils/out/admin/vtdu_be.tpl',
 		),
 		'blocks'      => array(
-			array('template' => 'headitem.tpl', 'block' => 'admin_headitem_inccss', 'file' => '/views/blocks/admin_headitem_inccss.tpl'),
+			array('template' => 'headitem.tpl', 'block' => 'admin_headitem_inccss', 'file' => 'admin_headitem_inccss.tpl'),
 			//array('template' => 'bottomnaviitem.tpl', 	'block' => 'admin_bottomnaviitem', 	 'file' => '/blocks/admin_bottomnaviitem.tpl'),
-			array('template' => 'bottomnaviitem.tpl', 'block' => 'admin_bottomnavicustom', 'file' => '/views/blocks/admin_bottomnavicustom.tpl'),
-			array('template' => 'layout/base.tpl', 'block' => 'base_js', 'file' => '/views/blocks/base_js.tpl'),
+			array('template' => 'bottomnaviitem.tpl', 'block' => 'admin_bottomnavicustom', 'file' => 'admin_bottomnavicustom.tpl'),
+			array('template' => 'layout/base.tpl', 'block' => 'base_js', 'file' => 'base_js.tpl'),
 
 		),
 		'settings'    => array(
